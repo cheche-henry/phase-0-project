@@ -19,6 +19,10 @@ body {
 .navbar {
   overflow: hidden;
   background-color: #333;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 /* Style the navigation bar links */
@@ -28,6 +32,7 @@ body {
   color: white;
   text-align: center;
   padding: 14px 20px;
+  font-size: ;
   text-decoration: none;
 }
 
@@ -56,7 +61,7 @@ input[type=text], select, textarea {
 
 input[type=submit] {
   background-color: #4CAF50;
-  color: white;
+  color: honeydew;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -69,31 +74,36 @@ input[type=submit]:hover {
 
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #F6DDCC;
   padding: 20px;
 }
 
+/* Styling embedded map*/
+#Offices {
+  text-align: center;
+}
+
+
 </style>
 </head>
-<body>
+<body style="background-color: #F4F6F7 ;">
 
-<div class="navbar">
-  <a href="#">Home</a>
+<div class="navbar" id="Home">
+  <a href="#Home">Home</a>
   <a href="#">About me</a>
   <a href="#">Projects</a>
   <a href="#">Skills</a>
-  <a href="#">Offfices</a>
+  <a href="#Offices">Offices</a>
   <a href="#Contact">Contact</a>
 </div>
 
 <div class="header">
-    <p style="text-align: center; font-size: 40px;"><script src="./script.js"></script></p>
+    <p style="padding-top: 20px; text-align: center; font-size: 40px;"><script src="./script.js"></script></p>
 </div>
 
-
-<h3 style="text-align: center;">Contact Form</h3>
-<div id="Contact>
-<div class="container">
+ <div id="Contact" style="padding-bottom: 5%;">
+  <h2 style="text-align: center;">Contact Form</h2>
+ <div class="container">
   <form action="henry.cheche@student.moringaschool.com">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -114,6 +124,11 @@ input[type=submit]:hover {
     <input type="submit" value="Submit">
   </form>
 </div>
+</div>
+
+<div id="Offices" style="background-color: #F6DDCC;">
+    <h2>Find us at</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31911.970986278084!2d36.911053483539796!3d-1.16302874570571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3f39962b138d%3A0xd3994372d4418d07!2sMembley%20Estate%2C%20Ruiru!5e0!3m2!1sen!2ske!4v1678524556764!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 </body>
 </html>
