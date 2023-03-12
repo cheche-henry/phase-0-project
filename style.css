@@ -28,6 +28,7 @@
     text-align: center;
     padding: 14px 20px;
     font-size: 20px ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
   }
   
@@ -91,7 +92,7 @@
   }
   
   div {
-    background-color: #F6DDCC;
+    background-color: whitesmoke;
   }
   /* Fonts*/
   h2 {
